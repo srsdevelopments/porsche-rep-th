@@ -120,6 +120,25 @@ body {
     border-top: solid #881C2B 3px;
 }
 
+.socialimg {
+  height: 50px;
+  width: 50px;
+}
+
+.social:hover {
+  color: #881C2B;
+}
+
+#socialwrap {
+
+}
+
+
+#specimg {
+  height: 35px;
+  width: 35px;
+}
+
 #footerpara {
   text-align: center;
 }
@@ -127,6 +146,7 @@ body {
 #picnphone {
   margin-top: 8%;
   text-align: center;
+  margin-bottom: 8%;
 }
 
 #littletanner {
@@ -349,6 +369,11 @@ body {
 
 @media only screen and (min-width: 992px){
 
+.socialimg {
+  height: 50px;
+  width: 50px;
+}
+
   #masterhead {
       height: 85px;
       width: 100%;
@@ -410,6 +435,10 @@ body {
       font-size: 24px;
   }
 
+  #socialwrap {
+    margin-top: 0%;
+  }
+
   #footerpara {
     text-align: left;
   }
@@ -417,6 +446,7 @@ body {
   #picnphone {
     margin-top: 0%;
     text-align: right;
+    margin-bottom: 0%;
   }
 
   #littletanner {

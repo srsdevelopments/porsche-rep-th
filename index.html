@@ -14,6 +14,7 @@
 
   </head>
   <body>
+
     <header id="masterhead">
       <nav id="menu1">
           <a href="https://www.porsche.com/usa/"><img src="./images/porschelogo.png" alt="Porsche" id="porlogo"></a>
@@ -21,9 +22,8 @@
       </nav>
 
           <nav id="menu2">
-              <a href="#aboutcont" class="hvr-back-pulse menuitem">ABOUT</a>
-              <a href="#skillscont" class="hvr-back-pulse menuitem">INVENTORY</a>
-              <a href="#contactcont" class="hvr-back-pulse menuitem">CONTACT</a>
+              <a href="https://www.parkplace.com/VehicleSearchResults?search=new&make=Porsche&location=motp-parkplace-porsche-inv" class="hvr-back-pulse menuitem">INVENTORY</a>
+              <a href="#picnphone" class="hvr-back-pulse menuitem">CONTACT</a>
           </nav>
 
         </header>
@@ -74,7 +74,7 @@
         <div class="container">
           <div class="row">
             <div class="col-12">
-              <a href="" class="hvr-back-pulse" id="viewinventorybtn">
+              <a href="https://www.parkplace.com/VehicleSearchResults?search=new&make=Porsche&location=motp-parkplace-porsche-inv" class="hvr-back-pulse" id="viewinventorybtn">
                 <span class="parkfont">PARK PLACE</span> INVENTORY
             </a>
           </div>
@@ -87,31 +87,38 @@
   <div class="container">
     <div class="row">
   <div class="col-sm-12 col-lg-6" id="footerpara">
-    PLACEHOLDER INFO PLACEHOLDER INFO PLACEHOLDER INFO PLACEHOLDER INFO PLACEHOLDER INFO PLACEHOLDER INFO
-      PLACEHOLDER INFO PLACEHOLDER INFO PLACEHOLDER INFO
-        PLACEHOLDER INFO PLACEHOLDER INFO PLACEHOLDER INFO
-          PLACEHOLDER INFO PLACEHOLDER INFO PLACEHOLDER INFO
-            PLACEHOLDER INFO PLACEHOLDER INFO PLACEHOLDER INFO
+    As a Porsche Sales Experience Manager, Tanner Harrington consistently represents the Dallas, TX based Park Place Porsche with class.  From some of the area's fastest luxury cars to the safest, Tanner works diligently to best serve his clients' specific needs and interests.
   </div>
   <div class="col-sm-12 col-lg-6" id="picnphone">
     <div class="container">
       <div class="row">
-        <div class="col-6" id="socialwrap">
-          <div class="social">
-            CALL ME AT PLACEHOLDER
+        <div class="col-12" id="socialwrap">
+          <a href="" class="hvr-back-pulse social">
+          <div>
+            <img class="socialimg" src="./images/whitephoneicon.png">
+            CALL ME AT 214-564-1600
           </div>
+        </a>
           <br>
-          <div class="social">
-            EMAIL ME AT PLACEHOLDER
-          </div>
           <br>
-          <div class="social">
-          FOLLOW ME AT PLACEHOLDER
+          <a href="mailto:tharrington@parkplace.com" class="hvr-back-pulse social">
+          <div>
+              <img class="socialimg" src="./images/whitemailicon.png">
+            EMAIL ME AT tharrington@parkplace.com
           </div>
+        </a>
+          <br>
+          <br>
+          <a href="https://www.linkedin.com/in/tanner-harrington-bab98a92/" class="hvr-back-pulse social">
+          <div>
+              <img id="specimg" src="./images/whitelinkedinicon.png">
+          CONNECT WITH ME ON LINKEDIN
+          </div>
+        </a>
         </div>
-        <div class="col-6">
+        <!-- <div class="col-6">
     <img id="littletanner" src="./images/nerd.jpg">
-  </div>
+  </div> -->
 </div>
 </div>
 </div>
@@ -128,7 +135,7 @@
 <div class="container">
 <div class="row">
   <div class="col-12" id="copyrights">
-      © - 2018 ALL RIGHTS RESERVED | THIS WEBSITE WAS DESIGNED & DEVELOPED AS A COLLABORATION BY <a href="index.html" class="hvr-back-pulse footername">STEVEN SHIRLEY</a> AND <a href="" class=" hvr-back-pulse footername">MERRITT WEBB</a>
+      © - 2018 ALL RIGHTS RESERVED | THIS WEBSITE WAS DESIGNED & DEVELOPED AS A COLLABORATION BY <a href="https://srsdevelopments.github.io/my-portfolio-website/" class="hvr-back-pulse footername">STEVEN SHIRLEY</a> AND <a href="https://mwebb11.github.io/" class="hvr-back-pulse footername">MERRITT WEBB</a>
   </div>
 </div>
 </div>
@@ -138,5 +145,22 @@
 <script type="text/javascript" src="slick.js"></script>
 <script src="./javascript/app.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.8/typed.min.js"></script>
+
+<script>
+
+            // SMOOTH SCROLLING
+            $('a[href*="#"]').click(function(event) {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        event.preventDefault();
+                        $('html, body').animate({
+                        scrollTop: target.offset().top
+                        }, 1000);
+                    }
+                }
+            });
+        </script>
 </body>
 </html>
